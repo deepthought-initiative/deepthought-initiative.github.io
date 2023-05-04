@@ -6652,6 +6652,7 @@ button.close {
   left: 100%;
 }
 .carousel-control {
+
   position: absolute;
   top: 0;
   bottom: 0;
@@ -6731,11 +6732,13 @@ button.close {
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next,
 .carousel-control .icon-prev {
+  background: black;
   position: absolute;
   top: 50%;
   z-index: 5;
   display: inline-block;
   margin-top: -10px;
+  transform: translateY(-50%);
 }
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
