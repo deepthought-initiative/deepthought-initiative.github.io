@@ -18783,7 +18783,7 @@ button.search-btn:hover {
 }
 
 .w3l-title-breadcrumb {
-  font-size: 48px;
+  font-size: 30px;
   line-height: 58px;
   font-weight: 600;
   text-transform: capitalize;
@@ -20329,14 +20329,18 @@ p.copy-footer-29 a:hover {
 /*-- About Page Styling --*/
 .breadcrumb-bg-about {
   background: url(../../website_files/images/banner1.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  position: relative;
+  -ms-background-size: cover;
+  background-size: 100%;
   z-index: 0;
+  position: relative;
+  display: grid;
+  align-items: center;
+  height: 300px;
 }
 
 .breadcrumb-bg-about:before {
   content: "";
-  background: rgba(103, 58, 183, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   bottom: 0;
