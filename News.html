@@ -13,6 +13,7 @@
     <!-- google-fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;900&amp;display=swap" rel="stylesheet">
@@ -266,10 +267,12 @@
                                    </h5>
                                 </a>
                                 <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="price-review mb-1 align-items-center">
-                                    <p style="font-size: 13px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; height:110px">
-                                        This upcoming August, Benjamin Mellon and fellow undergraduate at MSU, Aardarsh Swaminathan, will intern in Oslo, Norway under Dr. John Aiken.The interns will apply modern AI tools to identify acoustic events occuring in a combined hydrophone and geophone data set acquired in the Oman Drilling Project's Multiborehole observatory.
-                                    </p>
+                                <div class="description-container price-review mb-1 align-items-center">
+                                    <div class="description-wrapper">
+                                        <p class="description" style="font-size: 13px; overflow: hidden; height:110px">
+                                            This upcoming August, Benjamin Mellon and fellow undergraduate at MSU, Aardarsh Swaminathan, will intern in Oslo, Norway under Dr. John Aiken.The interns will apply modern AI tools to identify acoustic events occuring in a combined hydrophone and geophone data set acquired in the Oman Drilling Project's Multiborehole observatory.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -318,10 +321,12 @@
                                    </h5>
                                 </a>
                                 <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="price-review mb-1 align-items-center">
-                                    <p style="font-size: 13px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; height:110px">
-                                        Bea is excited to join Blue Cross Blue Shield of Michigan's Analytics Center of Excellence as a Summer 2024 Intern! Bea has previously worked with big data and different projects in the Deepthought Initiative Collaboration (DTI). That includes conducting text classification of abstracts with machine learning, website development with GitHub and  web template engines, and creating map visualizations of researcher migration paths. She is eager to explore a new industry and help create impact with her skills. Even more so, Bea is excited to learn and grow as a data scientist through this upcoming experience.
-                                    </p>
+                                <div class="description-container price-review mb-1 align-items-center">
+                                    <div class="description-wrapper">
+                                        <p class="description" style="font-size: 13px; overflow: hidden; height:110px">
+                                            Bea is excited to join Blue Cross Blue Shield of Michigan's Analytics Center of Excellence as a Summer 2024 Intern! Bea has previously worked with big data and different projects in the Deepthought Initiative Collaboration (DTI). That includes conducting text classification of abstracts with machine learning, website development with GitHub and  web template engines, and creating map visualizations of researcher migration paths. She is eager to explore a new industry and help create impact with her skills. Even more so, Bea is excited to learn and grow as a data scientist through this upcoming experience.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -370,10 +375,12 @@
                                    </h5>
                                 </a>
                                 <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="price-review mb-1 align-items-center">
-                                    <p style="font-size: 13px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; height:110px">
-                                        Unleashing the Power of Data Science: Internship at the European Space Agency's Deepthought Initiative Explores Astrophysics Meta-Research.
-                                    </p>
+                                <div class="description-container price-review mb-1 align-items-center">
+                                    <div class="description-wrapper">
+                                        <p class="description" style="font-size: 13px; overflow: hidden; height:110px">
+                                            Unleashing the Power of Data Science: Internship at the European Space Agency's Deepthought Initiative Explores Astrophysics Meta-Research.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -422,10 +429,12 @@
                                    </h5>
                                 </a>
                                 <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="price-review mb-1 align-items-center">
-                                    <p style="font-size: 13px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; height:110px">
-                                        DeepThought Initiative and collaborators organized a workshop on peer review at the European Southern Observatory.
-                                    </p>
+                                <div class="description-container price-review mb-1 align-items-center">
+                                    <div class="description-wrapper">
+                                        <p class="description" style="font-size: 13px; overflow: hidden; height:110px">
+                                            DeepThought Initiative and collaborators organized a workshop on peer review at the European Southern Observatory.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -534,10 +543,6 @@
     </script>
     <!-- //move top -->
 
-    <!-- common jquery plugin -->
-    <script src="./assets/js/jquery-3.3.1.min.js"></script>
-    <!-- //common jquery plugin -->
-
     <!-- theme switch js (light and dark)-->
     <script src="./assets/js/theme-change.js"></script>
     <!-- //theme switch js (light and dark)-->
@@ -629,6 +634,38 @@
         rgb.b = ~~(rgb.b/count);
         return rgb;            
     }
+
+    /*Read more functionality*/
+        $(function () {
+        var maxL = 150;
+        $('.description').each(function () {
+            var text = $(this).text();
+            if (text.length > maxL) {
+            var begin = text.substr(0, maxL),
+                end = text.substr(maxL);
+            $(this).html(begin)
+                .append($('<span class="hidden"/>').html(end))
+                .append($('<a class="readmore"/>').html(' ...Read more')); 
+            }
+        });
+
+        $('.readmore').on('click', function () {
+            var hiddenContent = $(this).prev('.hidden');
+var thisDescription = $(this).parent(); // Reference parent container
+
+    if (hiddenContent.css('display') === 'none') {
+      // Toggle overflow and text on click (Read more)
+      hiddenContent.slideToggle(400);
+      thisDescription.css('overflow', 'auto'); // Set overflow: auto
+      $(this).text('Read less');
+    } else {
+      // Toggle overflow and text on click (Read less)
+      hiddenContent.slideToggle(400);
+      thisDescription.css('overflow', 'hidden'); // Set overflow: hidden
+      $(this).text(' ...Read more');
+    }
+  });
+});
     </script>
 
 
