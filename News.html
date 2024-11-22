@@ -64,20 +64,27 @@
         }
 
         h5:hover {
-        color: #673ab7 !important;
-        text-decoration: underline;
+            color: #673ab7 !important;
+            text-decoration: underline;
         }
-
 
         .badge {
             display: inline-block;
-            background-color: red; /* Background color of the badge */
+            background-color: #673ab7; /* Background color of the badge */
             color: white;          /* Text color */
             padding: 4px 8px;     /* Padding around the text */
-            border-radius: 5px;   /* Rounded corners */
-            font-size: 12px;      /* Font size */
+            border-radius: 5px;   /* Rounded corners *
             text-align: center;    /* Center the text */
         }
+
+        .badge-tray {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+            overflow: auto;
+            overflow-x: auto;
+        }
+
 
         .heading:hover {
             background-image: linear-gradient(to left, #673ab7, #673ab7);
@@ -277,63 +284,42 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="card">
                             <div class="card-body blog-details" style="max-height: 330px">
-                            <span class="badge">Paper</span>
-                                <a class="zoom d-blog news-link" href="../../news/identify_telescope_machine_vicente.html">
-                                   <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size:large; height:67px ">
-                                     Identifying Telescope Usage in Astrophysics Publications: A Machine Learning Framework for Institutional Research Management at Observatories
-                                   </h5>
-                                </a>
-                                <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="description-container price-review mb-1 align-items-center">
-                                    <div class="description" style="font-size: 13px; overflow: hidden; height:110px"><p><a href="../members/vicente_amado/vicente_amado.html" target="_blank">Vicente  Amado Olivo</a>, our graduate student and collaborators, have developed a machine learning framework that automatically identifies when scientific facilities like telescopes are used in astrophysics papers, addressing a long-standing challenge in tracking research facility usage.</p><p>The framework analyzes scientific text using natural language processing and Support Vector Machine classification to accurately detect when missions like Kepler and TESS are used in research, achieving 92.9% accuracy. This innovative approach saves valuable research time by eliminating the need for manual classification while being adaptable for use across various scientific facilities worldwide. To see more and read the full paper: <a href='https://arxiv.org/abs/2411.00987'>https://arxiv.org/abs/2411.00987</a>.</p><p> <p>Collaborators:</p><ul><li> - <strong><a href="../members/wolfgang_kerzendorf/wolfgang_kerzendorf.html" target="_blank">Wolfgang Kerzendorf</a></strong> (Department of Computational Mathematics, Science, and Engineering; Department of Physics and Astronomy, Michigan State University)</li> <li> - <strong>Brian Cherinka</strong> (Space Telescope Science Institute)</li><li> - <strong>Josh Shields</strong> (Department of Physics and Astronomy, Michigan State University)</li><li> - <strong>Annie Didier</strong> (Outrider, Golden)</li><li> - <strong>Katharina von der Wense</strong> (Department of Computer Science, University of Colorado Boulder; Institute of Computer Science, Johannes Gutenberg University Mainz)</li></ul></p></div>
+                                <div class='badge-tray'>
+                                    
+                                    
+                                    <span class="badge">Paper</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Achievement</span>
+                                    
+                                    
                                 </div>
+                                <a class="zoom d-blog" href="../../news/identify_telescope_machine_vicente.html">
+                                    <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; font-size:19px; height:auto;">
+                                     Identifying Telescope Usage in Astrophysics Publications: A Machine Learning Framework for Institutional Research Management at Observatories
+                                    </h5>
+                                </a>
+                                
                             </div>
                             
-                            <div class="card-footer">
-                                <div>
-                                    <ul class="blog-meta">
-                                        <li>
-                                            <a style="font-size:10px">Contributer(s):</a>
-                                        </li>
-                                        
-                                            
-                                                <li>
-                                                    <a style="font-size: 10px;">
-                                                        
-                                                    </a>
-                                                </li>
-                                            
-                                            
-                                            <li>, </li>
-                                            
-                                        
-                                            
-                                                
-                                                
-                                                <li>
-                                                    <a href="members/wolfgang_kerzendorf/wolfgang_kerzendorf.html" target="_blank">
-                                                        <p style="font-size: 10px; height:35px"> Wolfgang Kerzendorf</p>
-                                                    </a>
-                                                </li>
-                                            
-                                            
-                                            <li>, </li>
-                                            
-                                        
-                                            
-                                                
-                                                
-                                                <li>
-                                                    <a href="members/vicente_amado/vicente_amado.html" target="_blank">
-                                                        <p style="font-size: 10px; height:35px"> Vicente  Amado Olivo</p>
-                                                    </a>
-                                                </li>
-                                            
-                                            
-                                        
-                                    </ul>
+                                <div class="card-footer">
+                                
+                                
+                                    
+                                    
+                                    <div class="author align-items-center">
+                                        <ul class="blog-meta">
+                                            <li>
+                                                <a href="../members/vicente_amado/vicente_amado.html" target="_blank">Vicente  Amado Olivo</a>
+                                            </li>
+                                        </ul>
+                                        <a href="../members/vicente_amado/vicente_amado.html" class="post-author ms-auto" target="_blank">
+                                            <img src="../members/vicente_amado/media/images/ESD_headshot.jpg" alt="Author's Image" class="img-fluid rounded-circle">
+                                        </a>
+                                    </div>
+                                
                                 </div>
-                            </div>
                             
                         </div>
                     </div>
@@ -356,28 +342,42 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="card">
                             <div class="card-body blog-details" style="max-height: 330px">
-                            <span class="badge">Paper</span>
-                                <a class="zoom d-blog news-link" href="../../news/gracie_at_acres_msu_nsf.html">
-                                   <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size:large; height:67px ">
-                                    Our Student Gracie wins best talk at the ACRES MSU NSF Research Experiences for Undergraduates Symposium 
-                                   </h5>
-                                </a>
-                                <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="description-container price-review mb-1 align-items-center">
-                                    <div class="description" style="font-size: 13px; overflow: hidden; height:110px"><p>Gracie  Tvrdik presented her research on the evolution of collaboration dynamics in Astrophysics at the annual ACRES REU (Research Experiences for Undergraduates) Symposium. Her outstanding presentation earned her the 1st Place Outstanding Talk Award.</p><p>Key points of Gracie's research:</p><p><ol><li style='list-style-type: decimal;'><strong>Utilized the NASA/ADS (Astrophysics Data System) dataset</strong> to analyze research dynamics in astrophysics over time.</li><li style='list-style-type: decimal;'><strong>Developed innovative methods</strong> to extract country information from affiliations, enabling accurate tracking of changes in research collaborations.</li><li style='list-style-type: decimal;'><strong>Collaborated with graduate student Vicente Amado Olivo</strong> and undergraduate Ben Mellon from our research group.</li></ol></p><p>The project outcomes showcase Gracie's exceptional research skills and hard work. Congratulations to Gracie for her outstanding achievement and to Vicente for his guidance throughout the project.</p></div>
+                                <div class='badge-tray'>
+                                    
+                                    
+                                    <span class="badge">Undergraduate</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Achievement</span>
+                                    
+                                    
                                 </div>
+                                <a class="zoom d-blog" href="../../news/gracie_at_acres_msu_nsf.html">
+                                    <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; font-size:19px; height:auto;">
+                                    Our Student Gracie wins best talk at the ACRES MSU NSF Research Experiences for Undergraduates Symposium 
+                                    </h5>
+                                </a>
+                                
                             </div>
                             
-                            <div class="card-footer">
-                                <div>
-                                    <ul class="blog-meta">
-                                        <li>
-                                            <a style="font-size:10px">Contributer(s):</a>
-                                        </li>
-                                        
-                                    </ul>
+                                <div class="card-footer">
+                                
+                                
+                                    
+                                    
+                                    <div class="author align-items-center">
+                                        <ul class="blog-meta">
+                                            <li>
+                                                <a href="../members/gracie_tvrdik/gracie_tvrdik.html" target="_blank">Gracie  Tvrdik</a>
+                                            </li>
+                                        </ul>
+                                        <a href="../members/gracie_tvrdik/gracie_tvrdik.html" class="post-author ms-auto" target="_blank">
+                                            <img src="../members/gracie_tvrdik/media/images/gracie.jpg" alt="Author's Image" class="img-fluid rounded-circle">
+                                        </a>
+                                    </div>
+                                
                                 </div>
-                            </div>
                             
                         </div>
                     </div>
@@ -400,52 +400,44 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="card">
                             <div class="card-body blog-details" style="max-height: 330px">
-                            <span class="badge">Paper</span>
-                                <a class="zoom d-blog news-link" href="../../news/icssi_poster_vicente.html">
-                                   <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size:large; height:67px ">
-                                    Vicente Amado Olivo Bridges Machine Learning and Science of Science at ICSSI
-                                   </h5>
-                                </a>
-                                <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="description-container price-review mb-1 align-items-center">
-                                    <div class="description" style="font-size: 13px; overflow: hidden; height:110px"><p>Our graduate student <a href="../members/vicente_amado/vicente_amado.html" target="_blank">Vicente  Amado Olivo</a> attended the 3rd International Conference on the Science of Science and Innovation (ICSSI) on July 1 - 3, at the National Academy of Sciences in Washington, DC. This interdisciplinary conference brought together leading experts in the field of science of science and innovation, providing a multi-channel platform to bring together both producers (scientists from industry and academia) and consumers (policymakers, publishers, funders, administrators, etc.) of the field. Vicente presented his work in identifying unique researchers from the literature utilizing machine learning to solve the author ambiguity challenge.</p></div>
+                                <div class='badge-tray'>
+                                    
+                                    
+                                    
+                                    
+                                    <span class="badge">Research</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Achievement</span>
+                                    
+                                    
                                 </div>
+                                <a class="zoom d-blog" href="../../news/icssi_poster_vicente.html">
+                                    <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; font-size:19px; height:auto;">
+                                    Vicente Amado Olivo Bridges Machine Learning and Science of Science at ICSSI
+                                    </h5>
+                                </a>
+                                
                             </div>
                             
-                            <div class="card-footer">
-                                <div>
-                                    <ul class="blog-meta">
-                                        <li>
-                                            <a style="font-size:10px">Contributer(s):</a>
-                                        </li>
-                                        
-                                            
-                                                
-                                                
-                                                <li>
-                                                    <a href="members/vicente_amado/vicente_amado.html" target="_blank">
-                                                        <p style="font-size: 10px; height:35px"> Vicente  Amado Olivo</p>
-                                                    </a>
-                                                </li>
-                                            
-                                            
-                                            <li>, </li>
-                                            
-                                        
-                                            
-                                                
-                                                
-                                                <li>
-                                                    <a href="members/wolfgang_kerzendorf/wolfgang_kerzendorf.html" target="_blank">
-                                                        <p style="font-size: 10px; height:35px"> Wolfgang Kerzendorf</p>
-                                                    </a>
-                                                </li>
-                                            
-                                            
-                                        
-                                    </ul>
+                                <div class="card-footer">
+                                
+                                
+                                    
+                                    
+                                    <div class="author align-items-center">
+                                        <ul class="blog-meta">
+                                            <li>
+                                                <a href="../members/vicente_amado/vicente_amado.html" target="_blank">Vicente  Amado Olivo</a>
+                                            </li>
+                                        </ul>
+                                        <a href="../members/vicente_amado/vicente_amado.html" class="post-author ms-auto" target="_blank">
+                                            <img src="../members/vicente_amado/media/images/ESD_headshot.jpg" alt="Author's Image" class="img-fluid rounded-circle">
+                                        </a>
+                                    </div>
+                                
                                 </div>
-                            </div>
                             
                         </div>
                     </div>
@@ -468,39 +460,46 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="card">
                             <div class="card-body blog-details" style="max-height: 330px">
-                            <span class="badge">Paper</span>
-                                <a class="zoom d-blog news-link" href="../../news/comp_cmse_vicente.html">
-                                   <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size:large; height:67px ">
-                                    Comprehensive Examination Announcement: Our Graduate Student Vicente becomes a PhD Candidate
-                                   </h5>
-                                </a>
-                                <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="description-container price-review mb-1 align-items-center">
-                                    <div class="description" style="font-size: 13px; overflow: hidden; height:110px"><p><a href="../members/vicente_amado/vicente_amado.html" target="_blank">Vicente  Amado Olivo</a> has successfully defended his comprehensive examination titled 'Leveraging Machine Learning to Revolutionize Astrophysics Research Processes: From Peer Review to Research Management'. His work explores how computational techniques like machine learning can enhance various aspects of the research process in astrophysics.</p></div>
+                                <div class='badge-tray'>
+                                    
+                                    
+                                    <span class="badge">Phd</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Research</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Achievement</span>
+                                    
+                                    
                                 </div>
+                                <a class="zoom d-blog" href="../../news/comp_cmse_vicente.html">
+                                    <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; font-size:19px; height:auto;">
+                                    Comprehensive Examination Announcement: Our Graduate Student Vicente becomes a PhD Candidate
+                                    </h5>
+                                </a>
+                                
                             </div>
                             
-                            <div class="card-footer">
-                                <div>
-                                    <ul class="blog-meta">
-                                        <li>
-                                            <a style="font-size:10px">Contributer(s):</a>
-                                        </li>
-                                        
-                                            
-                                                
-                                                
-                                                <li>
-                                                    <a href="members/vicente_amado/vicente_amado.html" target="_blank">
-                                                        <p style="font-size: 10px; height:35px"> Vicente  Amado Olivo</p>
-                                                    </a>
-                                                </li>
-                                            
-                                            
-                                        
-                                    </ul>
+                                <div class="card-footer">
+                                
+                                
+                                    
+                                    
+                                    <div class="author align-items-center">
+                                        <ul class="blog-meta">
+                                            <li>
+                                                <a href="../members/vicente_amado/vicente_amado.html" target="_blank">Vicente  Amado Olivo</a>
+                                            </li>
+                                        </ul>
+                                        <a href="../members/vicente_amado/vicente_amado.html" class="post-author ms-auto" target="_blank">
+                                            <img src="../members/vicente_amado/media/images/ESD_headshot.jpg" alt="Author's Image" class="img-fluid rounded-circle">
+                                        </a>
+                                    </div>
+                                
                                 </div>
-                            </div>
                             
                         </div>
                     </div>
@@ -523,16 +522,31 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="card">
                             <div class="card-body blog-details" style="max-height: 330px">
-                            <span class="badge">Paper</span>
-                                <a class="zoom d-blog news-link" href="../../news/geonintern_international_ben.html">
-                                   <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size:large; height:67px ">
-                                    Unveiling Earth's Secrets with AI: Our Undergraduate Benjamin Lands Oslo Internship
-                                   </h5>
-                                </a>
-                                <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="description-container price-review mb-1 align-items-center">
-                                    <div class="description" style="font-size: 13px; overflow: hidden; height:110px"><p>This upcoming August, <a href="../members/benjamin_mellon/benjamin_mellon.html" target="_blank">Benjamin Mellon</a> and fellow undergraduate at MSU, Aardarsh Swaminathan, will intern in Oslo, Norway under Dr. John Aiken. </p><p>The interns will apply modern AI tools to identify acoustic events occuring in a combined hydrophone and geophone data set acquired in the Oman Drilling Project's Multiborehole observatory.</p><p>The students will use a neural network to classify physical occurences for later classification based on limited validation data.</p><p>The interns are enthusiastic to use cutting edge computing resources to collaboratively devolope AI software solutions for a geophyscal problem.</p></div>
+                                <div class='badge-tray'>
+                                    
+                                    
+                                    <span class="badge">Undergraduate</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Internship</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Research</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Achievement</span>
+                                    
+                                    
                                 </div>
+                                <a class="zoom d-blog" href="../../news/geonintern_international_ben.html">
+                                    <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; font-size:19px; height:auto;">
+                                    Unveiling Earth's Secrets with AI: Our Undergraduate Benjamin Lands Oslo Internship
+                                    </h5>
+                                </a>
+                                
                             </div>
                             
                                 <div class="card-footer">
@@ -574,16 +588,27 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="card">
                             <div class="card-body blog-details" style="max-height: 330px">
-                            <span class="badge">Paper</span>
-                                <a class="zoom d-blog news-link" href="../../news/bcbsm_internship_bea.html">
-                                   <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size:large; height:67px ">
-                                    From Research to Real-World Impact: Our Undergrad Bea Joins BCBSM's Analytics Center
-                                   </h5>
-                                </a>
-                                <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="description-container price-review mb-1 align-items-center">
-                                    <div class="description" style="font-size: 13px; overflow: hidden; height:110px"><p><a href="../members/bea_lu/bea_lu.html" target="_blank">Bea Lu</a>, an undergraduate in the group, is excited to join Blue Cross Blue Shield of Michigan's Analytics Center of Excellence as a Summer 2024 Intern! Bea has previously worked with big data and different projects in the Deepthought Initiative Collaboration (DTI). That includes conducting text classification of abstracts with machine learning, website development with GitHub and  web template engines, and creating map visualizations of researcher migration paths. She is eager to explore a new industry and help create impact with her skills. Even more so, Bea is excited to learn and grow as a data scientist through this upcoming experience.</p></div>
+                                <div class='badge-tray'>
+                                    
+                                    
+                                    <span class="badge">Internship</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Undergraduate</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Achievement</span>
+                                    
+                                    
                                 </div>
+                                <a class="zoom d-blog" href="../../news/bcbsm_internship_bea.html">
+                                    <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; font-size:19px; height:auto;">
+                                    From Research to Real-World Impact: Our Undergrad Bea Joins BCBSM's Analytics Center
+                                    </h5>
+                                </a>
+                                
                             </div>
                             
                                 <div class="card-footer">
@@ -625,16 +650,27 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="card">
                             <div class="card-body blog-details" style="max-height: 330px">
-                            <span class="badge">Paper</span>
-                                <a class="zoom d-blog news-link" href="../../news/esa_internship_vicente.html">
-                                   <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size:large; height:67px ">
-                                    Bridging the Gaps: Our PhD Student Vicente interns at ESA, Applying Machine Learning to Astrophysics Literature
-                                   </h5>
-                                </a>
-                                <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="description-container price-review mb-1 align-items-center">
-                                    <div class="description" style="font-size: 13px; overflow: hidden; height:110px"><p>The Deepthought Initiative (DTI) collaboration applies computational techniques and tools to analyze the vast literature in scientific research, with a specific focus on leveraging machine learning to understand astrophysics literature. <a href="../members/vicente_amado/vicente_amado.html" target="_blank">Vicente  Amado Olivo</a> 's research revolves around tracking astrophysics publications and identifying astronomers worldwide through publications on arXiv. Being part of a research group comprising astrophysicists, Vicente's work in computational meta-research ensures that the tools developed by DTI are directly applicable to the needs of astrophysicists. To further their research in astrophysics meta-research, Vicente is visiting ESAC, a world-leading space agency, in order to gain firsthand experience with their current research systems, understand their future needs, actively participate in a proposal cycle, and collaborate with the librarians at ESA.</p></div>
+                                <div class='badge-tray'>
+                                    
+                                    
+                                    <span class="badge">Research</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Internship</span>
+                                    
+                                    
+                                    
+                                    <span class="badge">Achievement</span>
+                                    
+                                    
                                 </div>
+                                <a class="zoom d-blog" href="../../news/esa_internship_vicente.html">
+                                    <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; font-size:19px; height:auto;">
+                                    Bridging the Gaps: Our PhD Student Vicente interns at ESA, Applying Machine Learning to Astrophysics Literature
+                                    </h5>
+                                </a>
+                                
                             </div>
                             
                                 <div class="card-footer">
@@ -676,16 +712,21 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="card">
                             <div class="card-body blog-details" style="max-height: 330px">
-                            <span class="badge">Paper</span>
-                                <a class="zoom d-blog news-link" href="../../news/prur_conference.html">
-                                   <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size:large; height:67px ">
-                                    Peer Review Under Review - Workshop at European Southern Observatory
-                                   </h5>
-                                </a>
-                                <hr style="border-top: 1px dotted rgba(143, 143, 143);">
-                                <div class="description-container price-review mb-1 align-items-center">
-                                    <div class="description" style="font-size: 13px; overflow: hidden; height:110px"><p>Wolfgang Kerzendorf and collaborators organized a workshop on peer review at the European Southern Observatory (ESO) in Garching, Germany. The workshop aimed to address the persistent challenges faced by peer review in the scientific community, including the difficulty of identifying experts in specialized fields and the increasing number of researchers and publications. Experts from organizations such as ESO, ESA, ALMA, STScI, NASA, and NOIRLab came together to discuss the state of peer review and explored innovative approaches for a digital and interconnected science community. The workshop consisted of four main sessions and was held at the ESO Headquarters from February 6 to 10, 2023. Vicente Amado Olivo presented a contributed talk and you can find the slides see link in references.</p></div>
+                                <div class='badge-tray'>
+                                    
+                                    
+                                    
+                                    
+                                    <span class="badge">Research</span>
+                                    
+                                    
                                 </div>
+                                <a class="zoom d-blog" href="../../news/prur_conference.html">
+                                    <h5 style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; font-size:19px; height:auto;">
+                                    Peer Review Under Review - Workshop at European Southern Observatory
+                                    </h5>
+                                </a>
+                                
                             </div>
                             
                             <div class="card-footer">
